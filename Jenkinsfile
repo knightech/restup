@@ -7,7 +7,7 @@ node {
     archiveUnitTestResults()
     
     stage "Generate AMI"
-    sh "./gradlew buildDocker"
+    sh "./gradlew build buildDocker"
 }
 
 def archiveUnitTestResults() {
